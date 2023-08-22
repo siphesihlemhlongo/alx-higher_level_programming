@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# This line Compile all .c files into object files
+# line to Compile all .c files into object files
 gcc -c -fPIC *.c
 
 # It Creates the dynamic library
