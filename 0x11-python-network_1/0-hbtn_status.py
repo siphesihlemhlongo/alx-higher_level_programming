@@ -8,9 +8,9 @@ try:
         body = response.read()
         body_str = body.decode('utf-8')
 
-        print("- Body response:")
+        print("Body response:")
         print("\t- type:", type(body))
-        print("\t- content:", body)
+        print("\t- content:", repr(body))
         print("\t- utf8 content:", body_str)
 
 except urllib.error.HTTPError as e:

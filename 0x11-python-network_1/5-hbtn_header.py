@@ -15,4 +15,4 @@ x_request_id = response.headers.get('X-Request-Id')
 if x_request_id is not None:
     print(x_request_id)
 else:
-    print("X-Request-Id not found in the response header.")
+    print("None")
