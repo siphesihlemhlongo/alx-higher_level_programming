@@ -15,7 +15,7 @@ try:
         if header_value is not None:
             print(header_value)
         else:
-            print("Nothing")
+            print("None")
 
 except urllib.error.HTTPError as e:
     print("Error code:", e.code)
