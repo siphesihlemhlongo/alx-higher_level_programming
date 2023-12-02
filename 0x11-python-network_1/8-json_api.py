@@ -14,7 +14,7 @@ try:
     response = requests.post(url, data=data)
     json_data = response.json()
 
-    if json_data:
+    if 'id' in json_data and 'name' in json_data:
         print("[{}] {}".format(json_data['id'], json_data['name']))
     else:
         print("No result")
