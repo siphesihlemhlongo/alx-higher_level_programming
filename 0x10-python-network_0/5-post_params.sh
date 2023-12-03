@@ -14,4 +14,5 @@ subject="I will always be here for PLD"
 #with the required parameters and display the body of the response
 response=$(curl -s -X POST -d "email=$email&subject=$subject" "$1")
 
+#Dispay the body of the response
 echo "$response"

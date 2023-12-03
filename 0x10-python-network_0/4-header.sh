@@ -7,8 +7,7 @@ if [ -z "$1" ]; then
 fi
 
 # Use curl to send an OPTIONS request to the specified
-URL and display the Allow header
-allowed_methods=$(curl -s -I -X OPTIONS "$1"
-| grep -i "Allow" | awk '{print $2}')
+#URL and display the Allow header
+allowed_methods=$(curl -s -I -X OPTIONS "$1" | grep -i "Allow" | awk '{print $2}')
 
 echo "$allowed_methods"

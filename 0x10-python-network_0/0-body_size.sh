@@ -6,9 +6,10 @@ if [ -z "$1" ]; then
   exit 1
 fi
 
-# Use curl to send a request to the specified
-#URL and display the size of the body in bytes
+#The script takes URL as an argument,sends a request
+#using curl,and displays size of the body in bytes.
 size=$(curl -sI "$1" | grep -i "content-length"
 | awk '{print $2}' | tr -d '\r\n')
 
+#Display the size of body in bytes
 echo "$size"
